@@ -1,8 +1,6 @@
 # capstone-api
 This is the back-end portion of the Swift Geography mobile application project. The repository for the front-end can be found [here](https://github.com/EZIC13/capstone-swiftui).
 
-> NOTE: This README file is in progress and may be incomplete. Its contents will be updated as the project progresses until complete, at which point this notice will be removed.
-
 <br/>
 
 # API Details
