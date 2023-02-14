@@ -16,11 +16,12 @@ The following libraries were used in this project:
 # Getting Started
 To begin using this API complete the following steps:
 
-- Download and unzip the project files above
-- Edit `routes.js` and input the necessary MySQL credential information. ***This database MUST have a `countries` table.***
-- In a terminal, navigate to the unzipped folder directory and execute `npm install`
-- Also in the terminal, execute `node index.js` OR `nodemon`
-> NOTE: By default, the server listens on port 3000
+- Download and unzip the project files above.
+- Edit `countries2API.py` and edit the `LOCAL_URL` const on line 84 (or make a new const) and set the correct URL of your server.
+- Edit `routes.js` and input the necessary MySQL credential information. ***This database MUST have a `countries` table. If otherwise, all query strings in `routes.js` must be changed to match your database table name.***
+- In a terminal, navigate to the unzipped folder directory and execute `npm install`.
+- Also in the terminal, execute `node index.js` OR `nodemon`.
+> NOTE: By default, the server listens on port 3000.
 
 # countries2API.py
 This is the Python file that gets the data from the source, reformats it, and injects it into the database through a POST method in Node.js. This is done by parsing through the data returned from the REST Countries API and then creating a `country` object which is added to the `pulledCountries` list. This list is then sorted in alphabetical order and then sent to the API. 
